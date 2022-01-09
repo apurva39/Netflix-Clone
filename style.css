@@ -1,0 +1,290 @@
+:root {
+    --primary-color: #e50914;
+    --dark-color: #141414;
+    --light-color: #f4f4f4;
+}
+
+. {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: #999999;
+    /* color: #f4f4f4; */
+}
+
+h1,
+h3,
+p {
+    color: #f4f4f4;
+}
+
+h3 {
+    font-weight: lighter;
+}
+
+a {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+p {
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+}
+
+.showcase {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url('3.png');
+}
+
+.showcase::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+
+.showcase-top {
+    position: relative;
+    z-index: 2;
+    height: 90px;
+}
+
+.showcase-top img {
+    width: 340px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(40%, -50%);
+}
+
+.showcase-top a {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-60%, -50%);
+}
+
+.showcase-content {
+    position: absolute;
+    margin: 0% 26%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 9rem;
+}
+
+.showcase-content h1 {
+    font-size: 65px;
+    font-weight: 700;
+    margin: 0% 30px;
+    max-width: 700px;
+    /* text-align: center; */
+    line-height: 75px;
+}
+
+.showcase-content h3 {
+    color: white;
+    font-size: 25px;
+    margin: 16px 0px;
+}
+
+.showcase-content p {
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 00.5rem;
+    padding-bottom: 1rem;
+}
+
+.showcase-content input {
+    position: absolute;
+    left: 0;
+    bottom: -8vh;
+    height: 3rem;
+    width: 460px;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    /* height: 1rem;
+    width: 150px; */
+    font-size: 1rem;
+    /* padding-left: 1rem; */
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    margin-right: 0.5rem;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-rounded {
+    border-radius: 5px;
+}
+
+.showcase-content .btn-lg {
+    position: absolute;
+    right: 0;
+    bottom: -8vh;
+    padding: 0.5rem 1.2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    height: 38px;
+    width: 13rem;
+}
+
+.tv1,
+.mobile,
+.cartoon,
+.video1 {
+    border-top: 8px rgb(69, 69, 69) solid;
+    padding-top: 40px;
+}
+
+.card-style h1 {
+    color: white;
+    font-size: bold;
+    font-size: 3rem;
+    padding: 1rem;
+    padding-left: 0%;
+}
+
+.card-style h3 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin: 0.6rem;
+}
+
+.cartoon {
+    position: relative;
+    display: inline-flex;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.cartoon img {
+    width: 48%;
+    height: 100%;
+}
+
+.video1 {
+    position: relative;
+    display: inline-flex;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.video1 video {
+    width: 48%;
+    height: 100%;
+}
+
+.mobile {
+    position: relative;
+    display: inline-flex;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.mobile img {
+    width: 48%;
+    height: 100%;
+}
+
+.tv1 {
+    position: relative;
+    display: inline-flex;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.tv1 video {
+    width: 48%;
+    height: 100%;
+}
+
+.lastsec {
+    text-align: center;
+}
+
+.lastsec h1 {
+    font-size: 3rem;
+    padding-top: 30px;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    color: white;
+    align-items: center;
+}
+
+.questions li {
+    padding: .8em 2.2em 0.8em 1.2em;
+    margin: 5px;
+    background-color: #303030;
+    font-size: 1.6rem;
+    text-align: left;
+    width: 50%;
+    list-style: none;
+}
+
+.lastsec p {
+    padding-top: 40px;
+    font-size: 1rem;
+}
+
+.input {
+    display: inline-grid;
+    align-items: center;
+    grid-template-columns: 50% 40%;
+}
+
+.input input {
+    height: 3rem;
+    width: 450px;
+    border-radius: 2px;
+    margin-left: 80px;
+}
+
+.input button {
+    height: 3.4rem;
+    width: 200px;
+    margin-left: 101px;
+    background-color: rgb(235, 72, 72);
+    color: white;
+    font-size: 20px;
+    font-weight: lighter bold;
+    border-radius: 2px;
+}
