@@ -1,4 +1,4 @@
-# Netflix-Clone website from Html,css.
+# Netflix-Clone website from HTML,CSS.
 Check out here--https://apurva39.github.io/Netflix-Clone/
 
 ![Screenshot 2022-01-09 212510](https://user-images.githubusercontent.com/88641285/150622405-7ddfc4cf-a909-4789-ab0a-364c2b965486.png)
